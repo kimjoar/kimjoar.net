@@ -1,0 +1,33 @@
+---
+layout: default
+title: The MacBook died
+---
+
+{{ page.title }}
+----------------
+
+It had to happen. 30 months old the MacBook died last friday. Or, to be correct, the hard drive gave in. There is probably still a little more juice in Fermat (It must have a name, of course!). We have had great moments, but is it time to buy a new MacBook? There has been great development on the MacBook´s since I bought the black in 2007. Amongst others they finally support 4 GB (or more) ram, they now come with solid-state drives, and, of course, the unibody.
+
+So buy a new or fix the old? Well, I´m probably gonna fix the old anyway, but still, I am in the US right now and all things Apple are considerably cheaper here than in Norway. But let´s dive deeper.
+
+The MacBook Air has it´s advantages. It´s thin and it has a great weight with it´s 1.36 kg. Just to compare, the MacBook Pro 13" weights in at 2.04 kg, or 50 per cent more than the Air. But is it enough? The Air still only boosts 2 GB of ram, and the processor is a Intel Core 2 Duo with either 1.86GHz or 2.13GHz. The battery should hold for up to 5 hours, which is not to far from the Pro´s 7 hours.
+
+### Connections
+
+The Air´s peripheral connections include _Audio out_, one _USB 2.0 port_ and a _Mini DisplayPort_. The Pro on the other hand includes the same as the Air, plus a _Gigabit Ethernet port_, one _FireWire 800 port_, an additional _USB 2.0 ports_, a _SD card slot_, _Audio in_, and a _Kensington lock slot_. The great additions on the Pro is the extra USB 2.0, since I often use both an external keyboard and either an external hard drive or have my iPod connected. Just one port might be too few. (Hm, side note: Where did I put the FireWire cable for my external hard drive?)
+
+The SD card slot on the Pro is a nice addition, which implies that I don´t need to bring the cable for my camera everywhere. It is only a nice to have, but still, it is a positive addition. On the other hand, a huge loss is the Ehternet port. I do download a lot and I use the Ethernet port almost everyday. The wireless is fast, indeed, but still, it is a loss compared to Ethernet.
+
+### What drive?
+
+So, should I choose HD or SSD? The 128 GB SSD clocks in at $400 more than the default 160GB Serial ATA at 5400 rpm. First of all: how much disk space do I need? Fermat had 120 GB, and that was never a problem. All images, music, movies, and all other large files are moved to the external hard drive or uploaded to the cloud.
+
+The SSD is particularly faster at reading data, while the speed of writing are comparable to the HDD. That means faster booting, faster application launching, and faster open file operations. Write speeds during file saving have less of an impact on usability.
+
+Since the SSD has no moving parts, it is more reliable than a HDD. The great thing about no moving parts is also that it is completely silent.
+
+### So what say ye?
+
+**MacBook Pro**. There you have it. I made my choice. At some point a decision must be made. Ordered and will be delivered within the next week.
+
+Ordered the 13" with 128 GB SSD and 4 GB ram. SWEET!
