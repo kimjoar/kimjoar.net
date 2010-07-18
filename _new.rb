@@ -30,6 +30,10 @@ title: #{title}
 layout: default
 ---
 
+{{ page.title }}
+----------------
+
+
 EOS
 
 # Create a new file and open it in textmate
