@@ -1,0 +1,1 @@
+system "rm -rf _site/ && jekyll && rsync -avz _site/ kimjoar@server2.subsys.no:/www/kimjoar/www/"

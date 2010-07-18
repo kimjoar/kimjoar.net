@@ -13,14 +13,14 @@ The other day I had to connect to an Oracle database using Ruby on OS X. The [Ru
 First of all, you need to install the [Oracle Instant Client](http://www.oracle.com/technology/software/tech/oci/instantclient/htdocs/intel_macsoft.html). Since I'm on Snow Leopard I chose the 64 bit version. You need to download both the basic version and the SDK. Put the files in `/usr/local/oracle` or somewhere similar. Go to the directory where you installed the instant client and symlink `libclntsh.dylib`:
 
 {% highlight bash %}
-    ln -s libclntsh.dylib.10.1 libclntsh.dylib
+ln -s libclntsh.dylib.10.1 libclntsh.dylib
 {% endhighlight %}
 
 Then you have to add the variables Oracle need to function in your `.bashrc`. Running on OS X this ment setting `DYLD_LIBRARY_PATH` to the same path where you put the Oracle Instant Client. Remember to also set `NLS_LANG`. For me this was:
 
 {% highlight bash %}
-    export DYLD_LIBRARY_PATH=/usr/local/oracle
-    export NLS_LANG=NORWEGIAN_NORWAY.UTF8
+export DYLD_LIBRARY_PATH=/usr/local/oracle
+export NLS_LANG=NORWEGIAN_NORWAY.UTF8
 {% endhighlight %}
 
 Restart your terminal, and run `sudo gem install ruby-oci8`.
@@ -30,7 +30,7 @@ Restart your terminal, and run `sudo gem install ruby-oci8`.
 If you get the error message "Could not compile with Oracle instant client. Use Intel Mac instant Client." you have to specify ARCHFLAGS to only compile the C extension for 64-bit systems:
 
 {% highlight bash %}
-    sudo env DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH ARCHFLAGS="-arch x86_64" gem install ruby-oci8
+sudo env DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH ARCHFLAGS="-arch x86_64" gem install ruby-oci8
 {% endhighlight %}
 
 ### The error messages I got and how I solved them
@@ -38,8 +38,8 @@ If you get the error message "Could not compile with Oracle instant client. Use 
 `ORA-12514` and `ORA-12154`. Both were related to my tnsnames.ora. The problem was that the gem didn't create the correct tnsnames.ora information, and couldn't find one on my computer. I solved it by using the tnsnames information directly as input instead of the database name. For me this ended up as:
 
 {% highlight ruby %}
-    tnsnames = "(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = #{host})(PORT = #{port})) (CONNECT_DATA = (SID = #{sid})))"
-    conn     = OCI8.new(username, password, tnsnames)
+tnsnames = "(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = #{host})(PORT = #{port})) (CONNECT_DATA = (SID = #{sid})))"
+conn     = OCI8.new(username, password, tnsnames)
 {% endhighlight %}
 
 I have later heard the correct place to save the tnsnames.ora file is in DYLD_LIBRARY_PATH/network/admin/tnsnames.ora, e.g. `/usr/local/oracle/network/admin/tnsnames.ora`.
