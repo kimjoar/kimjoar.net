@@ -5,8 +5,10 @@ h1 {font-size: 1.3em; color: #308000; margin: 0 0 2em 0;}
 h2 {font-size: 1.3em; color: #308000; margin: 1em 0; font-weight: bold;}
 h3 {font-size: 1.2em; margin: 0.5em 0;}
 
-ul {list-style: disc inside; margin-bottom: 1.5em;}
-ol {list-style: decimal inside; margin-bottom: 1.5em;}
+ul {list-style: disc; margin-bottom: 1.5em;}
+ol {list-style: decimal; margin-bottom: 1.5em;}
+ol li {border-bottom: 1px solid #eee; padding-bottom: 0.5em; margin-bottom: 0.5em;}
+ol li:last-child {border-bottom: 0; padding-bottom: 0; margin-bottom: 0;}
 a {color: #308000; text-decoration: none;}
 
 sup {font-size:0.7em; vertical-align:top}
