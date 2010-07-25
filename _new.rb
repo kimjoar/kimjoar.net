@@ -1,4 +1,4 @@
-# Create new jekyll post and open in textmate
+# Create new jekyll post and open in Textmate
 # $ ruby _new.rb This is the title
 
 # The arguments form the title
@@ -32,7 +32,6 @@ layout: default
 
 {{ page.title }}
 ----------------
-
 
 EOS
 
