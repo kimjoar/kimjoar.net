@@ -8,6 +8,7 @@ h3 {margin: 0.5em 0;}
 h1 a {color: #fff; padding: 10px; background-color: #308000; font-weight: normal; -moz-border-radius: 5px; -webkit-border-radius: 5px; -khtml-border-radius: 5px; border-radius: 5px;}
 
 ul {list-style: disc; margin-bottom: 1.5em;}
+ul li {margin-left: 15px;}
 ol {list-style: decimal; margin-bottom: 1.5em;}
 ol li {border-bottom: 1px solid #eee; padding-bottom: 0.5em; margin-bottom: 0.5em;}
 ol li:last-child {border-bottom: 0; padding-bottom: 0; margin-bottom: 0;}
