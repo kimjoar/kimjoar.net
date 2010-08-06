@@ -1,11 +1,17 @@
 body { color:#000; font: 14px/1.5 constantia, palatino, "times new roman"; margin:2em 1.5em;}
-.container {width: 550px; margin:0 auto;}
+.container {width: 600px; margin:0 auto;}
 
 h1 {color: #308000; margin-bottom: 1.5em;}
 h2 {color: #308000; margin: 1em 0; font-weight: bold;}
 h3 {margin: 0.5em 0;}
 
 h1 a {color: #fff; padding: 10px; background-color: #308000; font-weight: normal; -moz-border-radius: 5px; -webkit-border-radius: 5px; -khtml-border-radius: 5px; border-radius: 5px;}
+
+#header {margin-bottom: 10px;}
+#header h1 {width: 150px; float: left;}
+#header ul {width: 450px; float: left; list-style: none;}
+#header ul li {float: left; margin: 0 4px; padding: 0 4px;}
+#header ul li:last-child {margin-right: 0; padding-right: 0;}
 
 ul {list-style: disc; margin-bottom: 1.5em;}
 ul li {margin-left: 15px;}
@@ -38,3 +44,14 @@ code {
 }
 
 pre code {border: 0; padding: 0;}
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+	}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */

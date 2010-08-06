@@ -3,17 +3,6 @@ layout: default
 title: Kim Joar Bekkelund
 ---
 
-<p>There is not much to see here, but you can find</p>
-<ul>
-  <li>the professional me at <a href="http://www.linkedin.com/in/kimjoarr">LinkedIn</a></li>
-  <li>the personal me at <a href="http://www.facebook.com/profile.php?id=338000043">Facebook</a></li>
-  <li>what interests me on <a href="http://kimjoar.tumblr.com/">Tumblr</a></li>
-  <li>my photos at <a href="http://www.flickr.com/photos/kimjoarr">Flickr</a></li>
-  <li>my projects at <a href="http://github.com/kjbekkelund">GitHub</a></li>
-  <li>my tweets at <a href="http://twitter.com/kimjoar">Twitter</a></li>
-</ul>
-
-<h2>Well actually, I did write something</h2>
 <ul>
   {% for post in site.posts %}
     <li><a href="{{ post.url }}">{{ post.title }}</a> <small>({{ post.date | date_to_string }})</small></li>
