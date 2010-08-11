@@ -1,10 +1,7 @@
-# Create new jekyll post and open in Textmate
-# $ ruby _new.rb This is the title
+# Create new blog post and open in MacVim
+# $ ruby _new.rb
 
-# The arguments form the title
-unless ARGV[0]
-  raise "Please provide a post title."
-end
+require 'highline/import'
 
 # Create a URL slug from the title
 class String
@@ -19,7 +16,9 @@ class String
 end
 
 # Create parameters
-title  = ARGV.join(' ')
+title   = ask("Title: ")
+publish = ask("Publish: ") { |q| q.default = "y" }
+publish = publish == 'y'
 slug   = title.slugify
 prefix = Time.new.strftime("%Y-%m-%d")
 file   = "#{prefix}-#{slug}.markdown"
@@ -28,13 +27,15 @@ text   = <<-EOS
 ---
 title: #{title}
 layout: default
+published: #{publish.to_s}
 ---
 
 {{ page.title }}
 ----------------
 
+
 EOS
 
 # Create a new file and open it in textmate
 File.open(path, 'w') { |f| f.write(text) }
-system("mate #{path}")
+system("mvim #{path}")
