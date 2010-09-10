@@ -1,10 +1,7 @@
 ---
-layout: default
+layout: post
 title: Jeg har ikke et gjennomsnittelig fokus på sikkerhet
 ---
-
-{{ page.title }}
-----------------
 
 <p class="quiet">(This post is in Norwegian.)</p>
 

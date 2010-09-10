@@ -1,10 +1,7 @@
 ---
-layout: default
+layout: post
 title: Are all the hexagonal numbers in the triangle numbers?
 ---
-
-{{ page.title }}
-----------------
 
 During my exam period I have been solving some problems over at [Project Euler](http://projecteuler.net/) as a little relaxation between work sessions. I came across [a problem](http://projecteuler.net/index.php?section=problems&id=45) that concerned triangle, pentagonal and hexagonal numbers that triggered my interest. The task was specifically finding a number that is a triangle, pentagonal and hexagonal number, and my programming solution to the problem can be [found at GitHub](http://github.com/kjbekkelund/project-euler/tree/master/45.py).
 

@@ -1,10 +1,7 @@
 ---
-layout: default
+layout: post
 title: Compendium rant
 ---
-
-{{ page.title }}
-----------------
 
 At my university there has been a gradual change as I have come further in my study that the course material has been written by my professors. These are often sold as compendiums or freely downloaded from the course web page. This is in itself no problem, but more often than not these compendiums has not had a technical review. Or any review at all. Some of them are riddled with mistakes and sloppy work, and absolutely without consistent layout, which makes them very hard to read — and therefore time consuming to learn the course material from.
 

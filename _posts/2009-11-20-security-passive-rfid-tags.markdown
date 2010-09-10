@@ -1,10 +1,7 @@
 ---
-layout: default
+layout: post
 title: The Security of Passive RFID Tags
 ---
-
-{{ page.title }}
-----------------
 
 <p class="quiet">Essay in the course TTM4137 Wireless Network Security at NTNU. Chosen as curriculum in the course.</p>
 

@@ -2,7 +2,7 @@ body { color:#000; font: 14px/1.5 constantia, palatino, "times new roman"; margi
 .container {width: 600px; margin:0 auto;}
 
 h1 {color: #308000; margin-bottom: 1.5em;}
-h2 {color: #308000; margin: 1em 0; font-size: 2em; text-align: center; text-shadow: #CCC 1px 1px; font-weight: normal; font-family: 'Nobile', helvetica, arial, serif;}
+h2 {color: #308000; margin: 1em 0 0.5em 0; font-size: 2em; text-align: center; text-shadow: #CCC 1px 1px; font-weight: normal; font-family: 'Nobile', helvetica, arial, serif;}
 h3 {margin: 0.5em 0;}
 
 h1 a {color: #fff; padding: 10px; background-color: #308000; font-weight: normal; -moz-border-radius: 5px; -webkit-border-radius: 5px; -khtml-border-radius: 5px; border-radius: 5px;}
@@ -26,6 +26,7 @@ p { margin:0 0 20px 0; }
 .quiet {font-size: 0.8em; color: #aaa;}
 .quiet a {color: #aaa;}
 p img {margin-top: 0;}
+p.meta {margin-bottom: 0.5em; color: #aaa; text-align: center;} 
 
 pre { line-height:1.5; border:1px solid #ddd;
   padding: 20px; margin: 0 0 20px 0;

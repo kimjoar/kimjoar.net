@@ -1,10 +1,7 @@
 ---
 title: Merging from Pinboard to Instapaper
-layout: default
+layout: post
 ---
-
-{{ page.title }}
-----------------
 
 Before I bought my iPad I used [Pinboard](pinboard.in/) all the time. The only problem was that I was better at adding articles to read than actually getting them read. After the iPad that has changed — because of the amazing [Instapaper](http://www.instapaper.com/) app. So I had to move the articles I want to read from Pinboard to Instapaper. Using [Pinboard's export](http://pinboard.in/howto/#export), [Nokogiri](http://nokogiri.org/), and the [Instapaper API](http://www.instapaper.com/api) it was no problem merging over. The Ruby script I created:
 

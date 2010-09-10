@@ -1,10 +1,7 @@
 ---
 title: Playing with instance_eval to create a syntax similar to routes in Rails 3
-layout: default
+layout: post
 ---
-
-{{ page.title }}
-----------------
 
 Routes in Rails 3 looks amazing compared to Rails 2. One of the great aspects in the revamped routes is the removed `map`. An example from Rails 2:
 

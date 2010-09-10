@@ -1,10 +1,7 @@
 ---
-layout: default
+layout: post
 title: My most important password
 ---
-
-{{ page.title }}
-----------------
 
 Today I realized it doens't matter how much I focus on my passwords for different services as long as my GMail password is not _as_ secure as them. The moment my GMail password is less secure, that is the easiest point of entry, and from there you can get access to most other services I use, by utilizing their lost password functionality.
 

@@ -1,10 +1,7 @@
 ---
 title: Hints for the Ruby certification
-layout: default
+layout: post
 ---
-
-{{ page.title }}
-----------------
 
 Today I became a certified Ruby developer through the [Ruby Association](http://www.ruby-assn.org/en/certification.htm). I won't discuss my thoughts about the certification, but just thought about giving some hints and ideas for those wanting to take the certification.
 

@@ -1,10 +1,7 @@
 ---
 title: My gitconfig
-layout: default
+layout: post
 ---
-
-{{ page.title }}
-----------------
 
 {% highlight ini %}
 [user]

@@ -1,10 +1,7 @@
 ---
-layout: default
+layout: post
 title: The MacBook died
 ---
-
-{{ page.title }}
-----------------
 
 It had to happen. 30 months old the MacBook died last friday. Or, to be correct, the hard drive gave in. There is probably still a little more juice in Fermat (It must have a name, of course!). We have had great moments, but is it time to buy a new MacBook? There has been great development on the MacBook´s since I bought the black in 2007. Amongst others they finally support 4 GB (or more) ram, they now come with solid-state drives, and, of course, the unibody.
 

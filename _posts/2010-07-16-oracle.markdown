@@ -1,10 +1,7 @@
 ---
-layout: default
+layout: post
 title: Connecting to an Oracle database using Ruby on OS X
 ---
-
-{{ page.title }}
-----------------
 
 The other day I had to connect to an Oracle database using Ruby on OS X. The [Ruby OCI8 gem](http://ruby-oci8.rubyforge.org/) worked out great, but were poorly documented, especially when things didn't work as planned. So let's look at what failed for me, and how I fixed it. (This was my first time touching an Oracle database, so be nice to me if I have misunderstood a basic concept.)
 
