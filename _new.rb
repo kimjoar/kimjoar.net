@@ -6,12 +6,12 @@ require 'highline/import'
 # Create a URL slug from the title
 class String
   def slugify
-      str = self.dup
-      str.gsub!(/[^a-zA-Z0-9 ]/,"")
-      str.gsub!(/[ ]+/," ")
-      str.gsub!(/ /,"-")
-      str.downcase!
-      str
+    str = self.dup
+    str.gsub!(/[^a-zA-Z0-9 ]/,"")
+    str.gsub!(/[ ]+/," ")
+    str.gsub!(/ /,"-")
+    str.downcase!
+    str
   end
 end
 
@@ -26,7 +26,7 @@ path   = File.join(File.dirname(__FILE__), "_posts/#{file}")
 text   = <<-EOS
 ---
 title: #{title}
-layout: default
+layout: post
 published: #{publish.to_s}
 ---
 
