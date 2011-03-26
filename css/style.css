@@ -68,3 +68,9 @@ blockquote p:last-child {margin-bottom: 0; padding-bottom: 0;}
 	}
 * html .clearfix             { zoom: 1; } /* IE6 */
 *:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+.highlight pre::-webkit-scrollbar {height: 8px; width:8px;}
+.highlight pre::-webkit-scrollbar-track-piece {margin-bottom: 10px; background-color: #e5e5e5; border-radius: 4px 4px;}
+.highlight pre::-webkit-scrollbar-thumb:vertical   {height: 25px; background-color: #ccc; -webkit-border-radius: 4px; -webkit-box-shadow: 0 1px 1px rgba(255,255,255,1);}
+.highlight pre::-webkit-scrollbar-thumb:horizontal {width:  25px; background-color: #ccc; -webkit-border-radius: 4px;}
+
