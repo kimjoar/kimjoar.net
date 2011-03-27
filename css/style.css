@@ -45,6 +45,7 @@ code {
   font-family: menlo, monaco, courier, monospace;
   border: 1px solid #ddd;
   padding: 1px;
+  background-color: #F7F7F7;
 }
 
 pre code {border: 0; padding: 0;}
