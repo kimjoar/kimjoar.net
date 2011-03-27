@@ -36,15 +36,15 @@ pre { line-height:1.5; border:1px solid #ddd;
   font-family: menlo, monaco, courier, monospace;
   box-shadow: 0 0 10px #ddd;
   -moz-box-shadow: 0 0 10px #ddd;
-  -webkit-box-shadow: 0 0 10px #ddd; 
+  -webkit-box-shadow: 0 0 10px #ddd;
   overflow:auto;
 }
 
 code {
   font-size: 0.8em;
-	font-family: menlo, monaco, courier, monospace;
-	border: 1px solid #ddd;
-	padding: 1px;
+  font-family: menlo, monaco, courier, monospace;
+  border: 1px solid #ddd;
+  padding: 1px;
 }
 
 pre code {border: 0; padding: 0;}
@@ -59,13 +59,13 @@ blockquote {
 blockquote p:last-child {margin-bottom: 0; padding-bottom: 0;}
 
 .clearfix:after {
-	visibility: hidden;
-	display: block;
-	font-size: 0;
-	content: " ";
-	clear: both;
-	height: 0;
-	}
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
 * html .clearfix             { zoom: 1; } /* IE6 */
 *:first-child+html .clearfix { zoom: 1; } /* IE7 */
 
