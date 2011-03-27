@@ -48,7 +48,7 @@ code {
   background-color: #F7F7F7;
 }
 
-pre code {border: 0; padding: 0;}
+pre code {border: 0; padding: 0; background-color: transparent;}
 
 blockquote {
   line-height: 1.5; border: 1px solid #ddd; background-color: #fafafa;
