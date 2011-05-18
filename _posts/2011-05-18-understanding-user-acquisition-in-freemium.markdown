@@ -9,12 +9,12 @@ thesis on freemium. This is mainly here to get feedback from my
 respondents, but I would love feedback even if you're not a respondent —
 just <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#109;&#097;&#105;&#108;&#064;&#107;&#105;&#109;&#106;&#111;&#097;&#114;&#046;&#110;&#101;&#116;">send me an email</a>.</p>
 
-I've had 10 interviews with companies using freemium, primarily focusing
-on how these companies acquire users. What I found when analyzing my
-interviews, is that there seems to be a similar process in how
-freemium-based companies aquire new users and customers. I've divided
-this process into three "loops". I'll start with going through each
-loop, and then putting it all together at the end.
+For my Master's thesis I've had 10 interviews with companies using
+freemium, primarily focusing on how these companies acquire users. What
+I found when analyzing my interviews, is that there seems to be a
+similar process in how freemium-based companies aquire new users and
+customers. I've divided this process into three "loops". I'll start with
+going through each loop, and then putting it all together at the end.
 
 I would love feedback on the model. Do you see things differently? If
 so, what? Are then any areas that are particularly lacking? Or do you
