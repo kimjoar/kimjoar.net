@@ -4,54 +4,34 @@ layout: post
 published: true
 ---
 
-<p class="quiet">This is the model I found when writing my Master's
-thesis on freemium. This is mainly here to get feedback from my
-respondents, but I would love feedback even if you're not a respondent —
-just <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#109;&#097;&#105;&#108;&#064;&#107;&#105;&#109;&#106;&#111;&#097;&#114;&#046;&#110;&#101;&#116;">send me an email</a>.</p>
-
-For my Master's thesis I've had 10 interviews with companies using
-freemium, primarily focusing on how these companies acquire users. What
-I found when analyzing my interviews, is that there seems to be a
-similar process in how freemium-based companies aquire new users and
-customers. I've divided this process into three "loops". I'll start with
-going through each loop, and then putting it all together at the end.
-
-I would love feedback on the model. Do you see things differently? If
-so, what? Are then any areas that are particularly lacking? Or do you
-agree with the model?
+For my Master's thesis I've interviewed 10 companies that use freemium.
+What I found when analyzing these interviews is that we can create a
+model for how freemium-based companies aquire new users. I've divided
+this process into three "loops":
 
 The User Acquisition Loop
 -------------------------
 
-How freemium-based companies aquire new users and thus build its
-userbase can be seen as a loop. This loop consist of four elements:
+User acquisition in freemium consist of four parts:
 
 1. **Potential and Existing Users.** First of all, the market must be
    big. If it's not a very big market opportunity, the chance of success
    with freemium is very small, as most likely only a single digit
-   percentage of users will convert to pay. As one of the respondents
-   said:
+   percentage of users will convert to pay.
 
-   > If you're going to build a meaningful revenue base, you need to
-   > have a very large user base to start with. It only works with very
-   > large market segments and market opportunities.
-
-   According to another, "the standard wisdom is that you'll see 2-3%
+   According to one respondent "the standard wisdom is that you'll see 2-3%
    conversion rate in the consumer internet, 5% or perhaps a bit higher
    on business users, prosumers." Thus, if the market is not big enough
-   it will be very difficult to get enough paying customers. One
-   respondents explained it as "most consumers don't pay for any web
-   app."
+   it will be very difficult to get enough paying customers.
 
-   Second, from the interviews there is a clear notion that successfully
+   Second, from the interviews there is a conviction that successfully
    having free users using the product or service relies on having a
-   *culture of free* — that is, fully accepting that potential and
-   existing users may not now or even ever pay for your product or
-   service. Thus, it is about seeing value in free users. As one of the
-   respondents said that "you will by definition get less serious
-   signups --- I think that's kind of a given," while another similarly
-   says that "there is an inverse relationship to cost and churn." One
-   explained it as follows:
+   *culture of free* — fully accepting that potential and
+   existing users may not now or even ever pay. You must see
+   value in free users. One of the respondents said that "you will by
+   definition get less serious signups — I think that's kind of a
+   given," while another similarly says that "there is an inverse
+   relationship to cost and churn." One explained it as follows:
 
    > There's not a lot of established companies that understand that
    > it's not just a "we'll put it on our website, we'll do a little bit
@@ -63,18 +43,12 @@ userbase can be seen as a loop. This loop consist of four elements:
    service.
 
 2. **Add Value.** The free version *must* have considerable value.
-   Freemium is about using the product as marketing, and thus, if the
+   Freemium is about using the product as marketing, and thus if the
    users don't get any value from it, you will see a very low amount of
    conversion. As one respondent said: "It begins and ends with great
    product. The product is the marketing, and that's why you have a free
    version." One respondent says that an incontrovertible offer is
-   needed --- this is what "will get the initial people in the door."
-   Similarly another said:
-
-   > The free version can be thought of as a trial version of the
-   > product, it gives you enough to understand what you can do, and
-   > then a lot of the upgrade features are showcased but must be paid
-   > for to access.
+   needed — this is what "will get the initial people in the door."
 
    According to one respondent: "We'll get a bigger return and we'll get
    a bigger brand affiliation if the people who are using the freemium
@@ -134,26 +108,16 @@ userbase can be seen as a loop. This loop consist of four elements:
    > You've got to be focused, you've got to have a very defined,
    > interconnected group of prospects that talk.
 
-   The respondent also said:
-
-   > If you deliver a product that benefits people in \[our chosen\]
-   > community, there are so many channels where people will talk about
-   > it, both online and face-to-face, that you can get pretty wide in
-   > that community in a matter of weeks and months rather than quarters
-   > and years.
-
    To get the word going in this vocal niche, the respondents talk about
    different strategies, but there is a strong focus on creating "viral
    loops", e.g. as explained by on respondent: "if there's a viral loop
    that's baked into your product, then \[the free users\] are adding to
-   your user base because they're helping attract new users." According
-   to him, virality is one of the key aspects of free users.
-
-   Another respondent go as far as stating that "anything that promotes
-   virality should be free to keep your viral flow going," and adds:
+   your user base because they're helping attract new users." Another
+   respondent go as far as stating that "anything that promotes virality
+   should be free to keep your viral flow going," and adds:
 
    > Don’t inhibit your own virality by limiting usage of the product in
-   > silly ways that don’t actually cost you anything --- most costs in
+   > silly ways that don’t actually cost you anything — most costs in
    > a SaaS business are marginal when it comes to usage.
 
    One of the clear upsides of building in this virality is in customer
@@ -184,7 +148,7 @@ userbase can be seen as a loop. This loop consist of four elements:
 
    > Free trial is also an interesting model, but it typically requires
    > a credit card up front, and can scare off consumers unnecessarily
-   > --- you end up with more qualified leads, but much less volume.
+   > — you end up with more qualified leads, but much less volume.
 
    We can see another perspective on this from another respondent.
    According to him, when they created their product they had the
@@ -214,10 +178,10 @@ userbase can be seen as a loop. This loop consist of four elements:
    to try it out. And as one respondent said it, there should be "no
    risk for the user."
 
-So to summarize this loop: You have some users, you give a lot of value
-for free, you get them engaged, and they get other people interested, so
-you have to make it dead easy for these new users to get in and start
-using your service. This builds your userbase larger, and the loop
+So to summarize this loop: You have some users, you give them a lot of
+value for free, you get them engaged, and they get other people
+interested, so you have to make it dead easy for these new users to get
+in and start using your service. This grows your userbase and the loop
 continues.
 
 The Learning Loops
@@ -238,39 +202,14 @@ respondent says:
 The reason this step is very important in addition to the user
 acquisition loop, is because "everyone has a different journey of
 freemium." It is about seeing where customers get value, and finding out
-what they are willing to pay for and how much. Especially one respondent
-had a story about one of their features:
-
-> People would tell us "we would pay $100 a month for this feature", so
-> we rolled it out at $100 a month, as an addon to our regular plans.
-> And it sold, but it didn't sell like we thought it would. But it was a
-> lot of desire to protect that, because it seemed to be valuable, so we
-> kind of dragged our feet. But we eventually rolled that into our
-> plans, and we forgot about it being an addon. We decided that this had
-> high perceived value, but the packaging that people said that they
-> wanted, they didn't actually want based on their bahaviour. So we
-> rolled it into all our plans, and we created a new plan that was one
-> step up from our low-end plan that included it. This increased all our
-> numbers. So, we were afraid that we would have a loss in terms of
-> revenue, but we have had a significant uptick in quantities of
-> conversion each month based on rolling in a feature that we thought
-> was valuable on its own.
+what they are willing to pay for and how much.
 
 The general knowledge seems to be that freemium is a "numbers game", and
 as it is far more opaque than regular payment models, having a deep
 knowledge and understanding about the users and how they behave is
 critical. According to one respondent it is "very easy to build a
-non-profitable business." He also state:
-
-> we know exactly how much the average free user cost us to serve over
-> the lifetime, we know, on average, how long it takes us, and how much
-> it costs us, to convert them into a paid user, we know how much it
-> cost to serve them as a paid user, we know with pretty good certainty
-> how long the will stick around before they churn out. So that's cost
-> of acquisition, cost to serve, and how much revenue we will extract
-> from that period is what lifetime value it adds up to be.
-
-One of the reasons this is important is, as one state:
+non-profitable business." One of the reasons this is important is, as
+one state:
 
 > There's room for permutations. We didn't have a formulae. We just
 > experimented. That's how we found out what works for us. It's just
