@@ -1,14 +1,15 @@
-body { color:#000; font: 14px/1.5 palatino, "times new roman"; margin:2em 1.5em;}
-.container {width: 600px; margin:0 auto;}
+body { color:#000; font: 14px/1.5 "palatino", "times new roman"; margin:4em 3.5em;}
+.container { width: 600px; }
 
-h1 {font-family: 'EB Garamond', serif; color: #333; text-align: center; font-size: 3.5em; margin-bottom: 0.5em;}
-h2 {font-family: 'EB Garamond', serif; color: #333; font-size: 2em; text-align: center; margin-bottom: 0.5em;}
+h1 {font-family: 'Yanone Kaffeesatz', sans-serif; font-weight: 200; color: #333; font-size: 1.5em; margin-bottom: 1.5em;}
+h2 {font-family: 'Yanone Kaffeesatz', sans-serif; font-weight: 200; color: #333; font-size: 1.5em; margin-bottom: 0.5em;}
 h3 {margin: 0.5em 0;}
 
+h1 a {background-color: #0A81A5; text-decoration: none; color: #fff; padding: 5px; border-radius: 5px; }
 
 ul {list-style: disc; margin-bottom: 1.5em;}
 ul li {margin-left: 15px;}
-ul li small {font-style: italic;}
+ul li small {font-style: italic; color: #999; }
 ol {list-style: decimal; margin-bottom: 1.5em;}
 ol li {border-bottom: 1px solid #eee; padding-bottom: 0.5em; margin-bottom: 0.5em;}
 ol li:last-child {border-bottom: 0; padding-bottom: 0; margin-bottom: 0;}
@@ -19,17 +20,17 @@ ul.posts li {margin-left: 0;}
 a {color: #0A81A5; text-decoration: none;}
 
 sup {font-size:0.7em; vertical-align:top}
-.amp {font-family: 'Goudy Bookletter 1911', serif; font-size: 0.9em;}
-.divide {font-family: 'Goudy Bookletter 1911', serif; font-size: 4em; padding: 0.5em; color: #ccc; text-align: center;}
+.divide {font-family: 'Yanone Kaffeesatz', sans-serif; font-size: 4em; padding: 0.5em; color: #ccc; text-align: center;}
 
 p { margin:0 0 20px 0; }
 .quiet {font-size: 0.8em; color: #aaa;}
 .quiet a {color: #0A81A5;}
 p img {margin-top: 0;}
 p.meta {font-family: 'EB Garamond', serif; font-style: italic; color: #aaa; text-align: left;}
-p.big {font-size: 2.5em; font-family: 'EB Garamond', serif;}
-p.contact {text-align: center;}
+p.big {font-size: 1.5em; font-weight: 200; font-family: 'Yanone Kaffeesatz', sans-serif;}
 p.last {margin-bottom: 0; padding-bottom: 0;}
+
+.line { margin-bottom: 30px; padding-bottom: 30px; border-bottom: 1px solid #EEE; }
 
 pre { line-height:1.5; border:1px solid #ddd;
   padding: 20px; margin: 0 0 20px 0;
