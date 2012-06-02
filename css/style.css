@@ -1,44 +1,77 @@
-body { color:#000; font: 14px/1.5 "palatino", "times new roman"; margin:4em 3.5em;}
-.container { width: 600px; }
+body { color: #000; font: 14px/1.5 "palatino", "times new roman"; }
 
-h1 {font-family: 'Yanone Kaffeesatz', sans-serif; font-weight: 200; color: #333; font-size: 1.5em; margin-bottom: 1.5em;}
-h2 {font-family: 'Yanone Kaffeesatz', sans-serif; font-weight: 200; color: #333; font-size: 1.5em; margin-bottom: 0.5em;}
-h3 {margin: 0.5em 0;}
+h1 { font-family: 'Yanone Kaffeesatz', sans-serif; font-weight: 200; font-size: 3.5em; }
+h2 { font-family: 'Yanone Kaffeesatz', sans-serif; font-weight: 200; color: #333; font-size: 3.5em; margin-bottom: 0.5em; }
+h3 { margin: 0.5em 0; }
 
-h1 a {background-color: #0A81A5; text-decoration: none; color: #fff; padding: 5px; border-radius: 5px; }
+h1 a { text-decoration: none; color: #fff; padding: 5px; border-radius: 5px; }
 
-ul {list-style: disc; margin-bottom: 1.5em;}
-ul li {margin-left: 15px;}
-ul li small {font-style: italic; color: #999; }
-ol {list-style: decimal; margin-bottom: 1.5em;}
-ol li {border-bottom: 1px solid #eee; padding-bottom: 0.5em; margin-bottom: 0.5em;}
-ol li:last-child {border-bottom: 0; padding-bottom: 0; margin-bottom: 0;}
+ul { list-style: disc; margin-bottom: 1.5em; }
+ul li { margin-left: 15px; padding: 5px 0; }
+ul li small { font-style: italic; color: #999; }
+ol { list-style: decimal; margin-bottom: 1.5em; }
+ol li { border-bottom: 1px solid #eee; padding-bottom: 0.5em; margin-bottom: 0.5em; }
+ol li:last-child { border-bottom: 0; padding-bottom: 0; margin-bottom: 0; }
 
-ul.posts {list-style: none;}
-ul.posts li {margin-left: 0;}
+#header { background-color: #67A9C3; padding-top: 6em; padding-bottom: 6em; }
+#header h1 { color: #3D6475; }
 
-a {color: #0A81A5; text-decoration: none;}
+#post { padding-top: 4em; }
+#post a { color: #67A9C3; }
 
-sup {font-size:0.7em; vertical-align:top}
-.divide {font-family: 'Yanone Kaffeesatz', sans-serif; font-size: 4em; padding: 0.5em; color: #ccc; text-align: center;}
+.more { background-color: #67A9C3; padding-top: 0; padding-bottom: 6em; }
+.more p { font-size: 2em; color: #353535; font-weight: 200; font-family: 'Yanone Kaffeesatz', sans-serif; }
 
-p { margin:0 0 20px 0; }
-.quiet {font-size: 0.8em; color: #aaa;}
-.quiet a {color: #0A81A5;}
-p img {margin-top: 0;}
-p.meta {font-family: 'EB Garamond', serif; font-style: italic; color: #aaa; text-align: left;}
-p.big {font-size: 1.5em; font-weight: 200; font-family: 'Yanone Kaffeesatz', sans-serif;}
-p.last {margin-bottom: 0; padding-bottom: 0;}
+.elsewhere { background-color: #92B456; padding-top: 6em; padding-bottom: 6em; }
+.elsewhere h2 { color: #6A832F; }
+.elsewhere ul li small { color: #6A832F; }
+.elsewhere .quiet { color: #6A832F; }
+
+.here { background-color: #EA6084; padding-top: 6em; padding-bottom: 6em; }
+.here h2 { color: #933A58; }
+.here ul li small { color: #933A58; }
+.here .quiet { color: #933A58; }
+
+.presentations { padding-top: 6em; padding-bottom: 6em; }
+.presentations a { color: #353535; }
+
+.elsewhere li, .here li, .presentations li,
+.elsewhere p,  .here p,  .presentations p {
+  font-weight: 200;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 1.5em;
+}
+
+.content { width: 660px; margin: 0 auto; }
+
+ul.posts { list-style: none; }
+ul.posts li { margin-left: 0; }
+
+a { color: #fff; text-decoration: none; }
+
+sup { font-size: 0.7em; vertical-align: top; }
+.divide { font-family: 'Yanone Kaffeesatz', sans-serif; font-size: 4em; padding: 0.5em; color: #ccc; text-align: center; }
+
+p { margin: 0 0 20px 0; }
+.quiet { font-size: 0.8em; color: #aaa; }
+.quiet a { color: #0A81A5; }
+p img { margin-top: 0; }
+p.meta { font-family: 'EB Garamond', serif; font-style: italic; color: #aaa; text-align: left; }
+p.big { font-size: 1.5em; font-weight: 200; font-family: 'Yanone Kaffeesatz', sans-serif; }
+p.last { margin-bottom: 0; padding-bottom: 0; }
 
 .line { margin-bottom: 30px; padding-bottom: 30px; border-bottom: 1px solid #EEE; }
 
-pre { line-height:1.5; border:1px solid #ddd;
-  padding: 20px; margin: 0 0 20px 0;
+pre {
+  line-height: 1.5;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 0 0 20px 0;
   font-family: menlo, monaco, courier, monospace;
   box-shadow: 0 0 10px #ddd;
   -moz-box-shadow: 0 0 10px #ddd;
   -webkit-box-shadow: 0 0 10px #ddd;
-  overflow:auto;
+  overflow: auto;
 }
 
 code {
@@ -49,30 +82,32 @@ code {
   background-color: #F7F7F7;
 }
 
-pre code {border: 0; padding: 0; background-color: transparent;}
+pre code { border: 0; padding: 0; background-color: transparent; }
 
-blockquote {
-  line-height: 1.5; border: 1px solid #ddd; background-color: #fafafa;
-  padding: 20px; margin: 0 0 20px 0;
+blockquote
+{
+  line-height: 1.5;
+  border: 1px solid #ddd;
+  background-color: #fafafa;
+  padding: 20px;
+  margin: 0 0 20px 0;
   box-shadow: 0 0 10px #ddd;
   -moz-box-shadow: 0 0 10px #ddd;
   -webkit-box-shadow: 0 0 10px #ddd;
 }
-blockquote p:last-child {margin-bottom: 0; padding-bottom: 0;}
+blockquote p:last-child { margin-bottom: 0; padding-bottom: 0; }
 
-.clearfix:after {
-  visibility: hidden;
+.clearfix:after{ visibility: hidden;
   display: block;
   font-size: 0;
   content: " ";
   clear: both;
-  height: 0;
-}
+  height: 0; }
 * html .clearfix             { zoom: 1; } /* IE6 */
 *:first-child+html .clearfix { zoom: 1; } /* IE7 */
 
-.highlight pre::-webkit-scrollbar {height: 8px; width:8px;}
-.highlight pre::-webkit-scrollbar-track-piece {margin-bottom: 10px; background-color: #e5e5e5; border-radius: 4px 4px;}
-.highlight pre::-webkit-scrollbar-thumb:vertical   {height: 25px; background-color: #ccc; -webkit-border-radius: 4px; -webkit-box-shadow: 0 1px 1px rgba(255,255,255,1);}
-.highlight pre::-webkit-scrollbar-thumb:horizontal {width:  25px; background-color: #ccc; -webkit-border-radius: 4px;}
+.highlight pre::-webkit-scrollbar { height: 8px; width: 8px; }
+.highlight pre::-webkit-scrollbar-track-piece { margin-bottom: 10px; background-color: #e5e5e5; border-radius: 4px 4px; }
+.highlight pre::-webkit-scrollbar-thumb:vertical   { height: 25px; background-color: #ccc; -webkit-border-radius: 4px; -webkit-box-shadow: 0 1px 1px rgba(255,255,255,1); }
+.highlight pre::-webkit-scrollbar-thumb:horizontal { width:  25px; background-color: #ccc; -webkit-border-radius: 4px; }
 
