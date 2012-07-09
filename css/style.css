@@ -1,4 +1,4 @@
-body { color: #000; font: 14px/1.5 "palatino", "times new roman"; }
+body { color: #000; font: 14px/1.5 "palatino", "times new roman"; position: relative; }
 
 h1 { font-family: 'Yanone Kaffeesatz', sans-serif; font-weight: 200; font-size: 3.5em; }
 h2 { font-family: 'Yanone Kaffeesatz', sans-serif; font-weight: 200; color: #333; font-size: 3.5em; margin-bottom: 0.5em; }
@@ -13,27 +13,32 @@ ol { list-style: decimal; margin-bottom: 1.5em; }
 ol li { border-bottom: 1px solid #eee; padding-bottom: 0.5em; margin-bottom: 0.5em; }
 ol li:last-child { border-bottom: 0; padding-bottom: 0; margin-bottom: 0; }
 
-#header { background-color: #67A9C3; padding-top: 6em; padding-bottom: 6em; }
+#header { background-color: #67A9C3; padding-top: 1em; padding-bottom: 1em;
+-webkit-box-shadow: 0 5px 8px rgba(0,0,0,0.3);
+   -moz-box-shadow: 0 5px 8px rgba(0,0,0,0.3);
+        box-shadow: 0 5px 8px rgba(0,0,0,0.3);
+position: fixed;
+top: 0;
+z-index: 100;
+width: 100%;
+}
 #header h1 { color: #3D6475; }
 
-#post { padding-top: 4em; }
-#post a { color: #67A9C3; }
+#post { position: absolute; z-index: 2; top: 100px; width: 100%; padding-top: 1em; }
 
-.more { background-color: #67A9C3; padding-top: 0; padding-bottom: 6em; }
-.more p { font-size: 2em; color: #353535; font-weight: 200; font-family: 'Yanone Kaffeesatz', sans-serif; }
+.more { background: url("/images/low_contrast_linen.png") repeat fixed; padding-top: 1em; padding-bottom: 1em; border-bottom: 1px solid #fff; position: fixed; top: 100px; width: 100%; }
+.more p { font-size: 2em; color: #fff; font-weight: 200; font-family: 'Yanone Kaffeesatz', sans-serif; margin: 0; }
+.more a { color: #67A9C3;}
 
-.elsewhere { background-color: #92B456; padding-top: 6em; padding-bottom: 6em; }
-.elsewhere h2 { color: #6A832F; }
-.elsewhere ul li small { color: #6A832F; }
-.elsewhere .quiet { color: #6A832F; }
+.wrapper { background-color: #fff; position: absolute; z-index: 2; top: 210px; width: 100%;
+-webkit-box-shadow: 0 -5px 8px rgba(0,0,0,0.3);
+   -moz-box-shadow: 0 -5px 8px rgba(0,0,0,0.3);
+        box-shadow: 0 -5px 8px rgba(0,0,0,0.3);
+}
 
-.here { background-color: #EA6084; padding-top: 6em; padding-bottom: 6em; }
-.here h2 { color: #933A58; }
-.here ul li small { color: #933A58; }
-.here .quiet { color: #933A58; }
-
-.presentations { padding-top: 6em; padding-bottom: 6em; }
-.presentations a { color: #353535; }
+.elsewhere { padding-top: 1em; padding-bottom: 1em; }
+.here { padding-top: 1em; padding-bottom: 1em; }
+.presentations { padding-top: 1em; padding-bottom: 1em; }
 
 .elsewhere li, .here li, .presentations li,
 .elsewhere p,  .here p,  .presentations p {
@@ -47,7 +52,7 @@ ol li:last-child { border-bottom: 0; padding-bottom: 0; margin-bottom: 0; }
 ul.posts { list-style: none; }
 ul.posts li { margin-left: 0; }
 
-a { color: #fff; text-decoration: none; }
+a { color: #3D6475; text-decoration: none; }
 
 sup { font-size: 0.7em; vertical-align: top; }
 .divide { font-family: 'Yanone Kaffeesatz', sans-serif; font-size: 4em; padding: 0.5em; color: #ccc; text-align: center; }
