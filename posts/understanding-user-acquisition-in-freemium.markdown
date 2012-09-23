@@ -251,7 +251,7 @@ Putting It All Together
 
 Putting these three elements together, we get the following model:
 
-![The Freemium Loops](https://github.com/kjbekkelund/kimjoar.net/blob/master/posts/images/model.png)
+![The Freemium Loops](https://raw.github.com/kjbekkelund/kimjoar.net/master/posts/images/model.png)
 
 Based on this, we can say that the value of free users is in driving the
 user acquisition loop — I call it crowdsourced user acquisition — and in
