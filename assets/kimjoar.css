@@ -9,9 +9,8 @@ h2 {
   color: #fff;
   font-weight: lighter;
   text-transform: uppercase;
+  font-size: 2em;
 }
-h1 { font-size: 2em; }
-h2 { font-size: 2em; }
 
 .wrapper {
   width: 90%;
@@ -83,7 +82,7 @@ ul {
        -moz-box-sizing: border-box;
             box-sizing: border-box;
   }
-  .col.last {
+  .col:last-child {
     padding: 0 0 0 1em;
   }
 
