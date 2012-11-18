@@ -30,6 +30,7 @@ a {
   text-decoration: none;
   font-weight: normal;
 }
+h1 a { color: #fff; }
 
 ul {
   list-style-type: none;
