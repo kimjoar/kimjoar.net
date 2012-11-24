@@ -1,36 +1,61 @@
 body {
-  background-color: #262626;
-  color: #999;
-  font: 100%/1.5 'Source Sans Pro', Helvetica, sans-serif;
+  background-color: #fff;
+  color: #333;
+  font: 100%/1.5 'Source Sans Pro', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 { font-family: 'Dosis', sans-serif; }
+
+h1 {
+  margin: 0;
+  font-size: 3em;
+  text-align: center;
+}
+h2 {
+  font-size: 1.5em;
 }
 
 h1,
 h2 {
-  color: #fff;
-  font-weight: lighter;
   text-transform: uppercase;
-  font-size: 2em;
+  color: #000;
+}
+
+h1 a {
+  display: block;
+  margin: 0;
+  padding-top: 0.5em;
+  padding-bottom: 0.0em;
+  color: #000;
 }
 
 .wrapper {
+  position: relative;
   width: 90%;
   max-width: 800px;
-  margin: 30px auto;
+  margin: 0 auto;
 }
 
 .me {
+  border-left: 10px solid #000;
   font-size: 1.5em;
-  color: #fff;
-  font-weight: lighter;
+  padding: 0.3em 1em;
   margin-bottom: 2em;
+  font-family: 'Dosis', sans-serif;
 }
 
 a {
   color: #FD5158;
   text-decoration: none;
   font-weight: normal;
+
+  -webkit-transition: all .2s ease-out;
+     -moz-transition: all .2s ease-out;
+      -ms-transition: all .2s ease-out;
+       -o-transition: all .2s ease-out;
+          transition: all .2s ease-out;
 }
-h1 a { color: #fff; }
+li a { color: #000; }
 
 ul {
   list-style-type: none;
@@ -38,41 +63,36 @@ ul {
   padding: 0;
 }
 
-.posts a {
-  padding: 1em 0;
-  border-bottom: 1px solid #333333;
+.posts a,
+.code a,
+.presentations a {
+  padding: 1em 0 0.6em 0;
+  border-bottom: 1px solid #eee;
   display: block;
+  color: #000;
+
+  -webkit-transition-duration: .5s;
+     -moz-transition-duration: .5s;
+      -ms-transition-duration: .5s;
+       -o-transition-duration: .5s;
+          transition-duration: .5s;
 }
-.posts a:hover {
+.posts a:hover,
+.code a:hover,
+.presentations a:hover {
   border-bottom: 1px solid #FD5158;
 }
 
-.code a,
-.presentations a {
-  padding: 0.5em 0;
-  color: #fff;
-  text-transform: uppercase;
-  display: block;
+a .description:before {
+  content: "— "
 }
-.code a:hover,
-.presentations a:hover {
-  color: #FD5158;
-}
-.code a .description,
-.presentations a .description {
-  display: block;
-  text-transform: none;
+a .description {
   color: #999;
 }
 
-@media screen and (min-width: 500px) {
-  .me { font-size: 2em; }
-}
-
 @media screen and (min-width: 700px) {
-  h2 {
-    font-size: 1.5em;
-  }
+  h1 a { margin: 0 2em; }
+  .me { font-size: 2.3em; }
 
   .col {
     width: 50%;
@@ -83,17 +103,5 @@ ul {
        -moz-box-sizing: border-box;
             box-sizing: border-box;
   }
-  .col:last-child {
-    padding: 0 0 0 1em;
-  }
-
-  .wrapper {
-    margin: 60px auto;
-  }
+  .col:last-child { padding: 0 0 0 1em; }
 }
-
-@media screen and (min-width: 1300px) {
-  .wrapper { max-width: 1000px; }
-  .me { font-size: 2.5em; }
-}
-
