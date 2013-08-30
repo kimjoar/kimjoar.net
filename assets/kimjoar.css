@@ -79,12 +79,6 @@ a {
   color: #FD5158;
   text-decoration: none;
   font-weight: normal;
-
-  -webkit-transition: all .2s ease-out;
-     -moz-transition: all .2s ease-out;
-      -ms-transition: all .2s ease-out;
-       -o-transition: all .2s ease-out;
-          transition: all .2s ease-out;
 }
 li a { color: #000; }
 
@@ -94,17 +88,15 @@ ul {
   padding: 0;
 }
 
+.posts li,
+.code li,
+.presentations li {
+    padding: 0.2em 0;
+}
 .posts a,
 .code a,
 .presentations a {
-  padding: 0.2em 0;
-  display: inline-block;
-
-  -webkit-transition-duration: .5s;
-     -moz-transition-duration: .5s;
-      -ms-transition-duration: .5s;
-       -o-transition-duration: .5s;
-          transition-duration: .5s;
+  display: inline;
 }
 
 .presentations {
@@ -114,10 +106,10 @@ ul {
 .presentations .tag {
     background-color: #333;
     color: #fff;
-    padding: 2px 5px;
+    padding: 3px 5px;
     font-size: 0.8em;
     border-radius: 4px;
-    display: inline-block;
+    display: inline;
 }
 
 a .description:before {
