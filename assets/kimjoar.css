@@ -4,44 +4,75 @@ body {
   font: 100%/1.5 'Source Sans Pro', sans-serif;
 }
 
-h1,h2,h3,h4,h5,h6 { font-family: 'Dosis', sans-serif; }
+header {
+  background-color: #fff;
+  padding-top: 1em;
+  margin-left: 2em;
+}
+
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+h1,h2,h3,h4,h5,h6 { font-family: 'Open Sans Condensed', sans-serif; }
 
 h1 {
   margin: 0;
-  font-size: 3em;
-  text-align: center;
-}
-h2 {
-  font-size: 1.5em;
-}
-
-h1,
-h2 {
-  text-transform: uppercase;
+  font-size: 2.5em;
+  text-align: left;
   color: #000;
+  font-weight: 300;
+}
+header h1 {
+    text-align: center;
 }
 
+@media (min-width: 600px) {
+    header h1 {
+        float: left;
+        text-align: left;
+    }
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 0.5em;
+}
+h3 {
+    font-family: 'Source Sans Pro';
+    font-size: 1em;
+    margin: 0;
+ }
 h1 a {
   display: block;
   margin: 0;
-  padding-top: 0.5em;
-  padding-bottom: 0.0em;
+  padding: 0.2em 0;
   color: #000;
+  font-weight: 300;
 }
 
 .wrapper {
   position: relative;
-  width: 90%;
-  max-width: 800px;
-  margin: 0 auto;
+  max-width: 900px;
 }
 
 .me {
-  border-left: 10px solid #000;
-  font-size: 1.5em;
-  padding: 0.3em 1em;
-  margin-bottom: 2em;
-  font-family: 'Dosis', sans-serif;
+  font-size: 1.2em;
+  margin-bottom: 1em;
+  font-weight: 300;
+  margin-top: 1em;
+  padding: 30px;
+  background-color: #333;
+  color: #FFF;
+  font-weight: 300;
 }
 
 a {
@@ -66,10 +97,8 @@ ul {
 .posts a,
 .code a,
 .presentations a {
-  padding: 1em 0 0.6em 0;
-  border-bottom: 1px solid #eee;
+  padding: 0.2em 0;
   display: block;
-  color: #000;
 
   -webkit-transition-duration: .5s;
      -moz-transition-duration: .5s;
@@ -77,10 +106,17 @@ ul {
        -o-transition-duration: .5s;
           transition-duration: .5s;
 }
-.posts a:hover,
-.code a:hover,
-.presentations a:hover {
-  border-bottom: 1px solid #FD5158;
+
+.presentations {
+    margin-bottom: 1em;
+}
+
+.presentations .tag {
+    background-color: #333;
+    color: #fff;
+    padding: 2px 5px;
+    font-size: 0.8em;
+    border-radius: 4px;
 }
 
 a .description:before {
@@ -90,18 +126,36 @@ a .description {
   color: #999;
 }
 
-@media screen and (min-width: 700px) {
-  h1 a { margin: 0 2em; }
-  .me { font-size: 2.2em; }
+.col {
+    margin-left: 2em;
+}
 
-  .col {
-    width: 50%;
-    float: left;
-    padding: 0 1em 0 0;
+.external li {
+    font-size: 2.5em;
+    display: inline-block;
+}
+.external a:hover {
+    color: #FD5158;
+}
 
-    -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
-  }
-  .col:last-child { padding: 0 0 0 1em; }
+@media (max-width: 600px) {
+    .external {
+        text-align: center;
+    }
+    .external li {
+        margin-left: 15px;
+    }
+    header {
+        margin-left: 0;
+    }
+}
+@media (min-width: 600px) {
+    .external {
+        float: left;
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+    .external li {
+        margin-left: 15px;
+    }
 }
