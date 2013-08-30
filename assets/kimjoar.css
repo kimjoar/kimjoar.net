@@ -7,7 +7,7 @@ body {
 header {
   background-color: #fff;
   padding-top: 1em;
-  margin-left: 2em;
+  margin-left: 0;
 }
 
 .cf:before,
@@ -131,6 +131,9 @@ a .description {
     margin-left: 2em;
 }
 
+.external {
+    text-align: center;
+}
 .external li {
     font-size: 2.5em;
     display: inline-block;
@@ -143,18 +146,14 @@ a .description {
     display: block;
 }
 
-@media (max-width: 600px) {
-    .external {
-        text-align: center;
-    }
-    header {
-        margin-left: 0;
-    }
-}
 @media (min-width: 600px) {
     .external {
         float: left;
+        text-align: left;
         margin-left: 30px;
         margin-top: 10px;
+    }
+    header {
+        margin-left: 2em;
     }
 }
