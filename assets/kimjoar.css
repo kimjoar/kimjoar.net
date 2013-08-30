@@ -98,7 +98,7 @@ ul {
 .code a,
 .presentations a {
   padding: 0.2em 0;
-  display: block;
+  display: inline-block;
 
   -webkit-transition-duration: .5s;
      -moz-transition-duration: .5s;
@@ -117,6 +117,7 @@ ul {
     padding: 2px 5px;
     font-size: 0.8em;
     border-radius: 4px;
+    display: inline-block;
 }
 
 a .description:before {
