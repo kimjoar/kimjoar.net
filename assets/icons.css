@@ -1,0 +1,28 @@
+@font-face {
+  font-family: '[set]Foundicons';
+  src: url('foundation_icons_social/fonts/social_foundicons.eot');
+  src: url('foundation_icons_social/fonts/social_foundicons.eot?#iefix') format('embedded-opentype'),
+       url('foundation_icons_social/fonts/social_foundicons.woff') format('woff'),
+       url('foundation_icons_social/fonts/social_foundicons.ttf') format('truetype'),
+       url('foundation_icons_social/fonts/social_foundicons.svg#socialFoundicons') format('svg');
+  font-weighft: normal;
+  font-style: normal;
+}
+
+[class*="foundicon-"] {
+  display: inline;
+  width: auto;
+  height: auto;
+  line-height: inherit;
+  vertical-align: baseline;
+  background-image: none;
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+[class*="foundicon-"]:before {
+  font-family: "[set]Foundicons";
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+}
