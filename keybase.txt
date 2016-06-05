@@ -1,0 +1,75 @@
+==================================================================
+https://keybase.io/kimjoar
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://kimjoar.net
+  * I am kimjoar (https://keybase.io/kimjoar) on keybase.
+  * I have a public key with fingerprint 4DE7 978E A185 9402 B3AF  7943 003C 1F1D 3DC1 701B
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0101e0f426d94619a10acb385ed295ab673dc05ac0be517f0deb3fce78953302cb1f0a",
+            "fingerprint": "4de7978ea1859402b3af7943003c1f1d3dc1701b",
+            "host": "keybase.io",
+            "key_id": "003c1f1d3dc1701b",
+            "kid": "0101e0f426d94619a10acb385ed295ab673dc05ac0be517f0deb3fce78953302cb1f0a",
+            "uid": "7f7addb193f2d568ac7400823ead4019",
+            "username": "kimjoar"
+        },
+        "service": {
+            "hostname": "kimjoar.net",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1443704648,
+    "expire_in": 157680000,
+    "prev": "0a45d4a12f11081ccd310e1857dc149dcdc88873b6526af6eb4817e26b438655",
+    "seqno": 4,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.47
+Comment: https://keybase.io/crypto
+
+yMM6AnicrVJ9TFVlHL4IiJAKJjUZX+0oeFd3cL4/LmBb8TVtkEgldOP2nnPegwfk
+3G+QCzhQki1lLLhZk+bUhNa6EEM2kPjwJjITabLURZQIDNa6GAbMcEvWOVZ/tP7t
+/efd+3uf53mf3/P+RrYE6sICdKnxsWk+a3TAmM/j0r25JTm7CuEtYiVirEJK4dMN
+Hhahw2kulUXEiKAYikFUInFa5Ega4wCGAoEnWAqKOEcBnmYIUUApIKA8pDBGQkXI
+E5IAGZajCALFBR6TUIAYEElWiqHdapcVpypLipDhGBYCjKU4EsV5AkgMRxIoSgiY
+hImqKMagGK8SD1kcGkM1xwMHTJItak09mP+y91/8/+zb9VSOkRggijzGERIuUjQL
+BIZEURYnIBBJFOM0oAPaFVAGNa9yWYkF2JEaA6IWy2UBarlqjfwbkKRAp8q02i1O
+i2A5rF4ccjqtRo3nrLRqwArIm/+WMPOyIqohqoRyaHfIFgUxYipScMqaJkaSBIOS
+NMkaEHjEKtuhWdYQFEOzqLq0Z2C5lgwgKZEEGC5hGMpigiASGArVf2DUDElOFESB
+ZVmG4GkKp4FEQ55kMQbiNE8SLE1RiNaUTbEgRlK1CYpVSYdcrACnyw6Rmq99piBd
+QJhuY/AGbbh0YaER/4xcXVyErq2/6mKm92HB1t9rixZ2zCV6ZiMe6bnFo8HkyvTu
+9sc5v25rGS18ZuKHwtyJjtzE05nRZVOFqRmBg6n94ueupfPBHfsSgu7gTbP6tPYN
+NluPKzDCo4/uns5yhuDWkrMjPW21AyNh7xhi3ii5GVJ3fC3uq8T1meDzu+RXleTF
+c+y4oWaz79rj9OHWoqKcZZ/pFwE9HRW3+3ZS3bw7A5nJXNffk9Pup89Xb94bemQy
+pT4y6sWdr9k+7t3/4aaMF5Dwia69J1P+GAYrSvh6zM1V/7P+hoc1Nz6YbF3K9s/9
+Zkqkfr58oW+gVr/dsHjd7CfGS95uL9J3f/pc9Ij3UlHOHpA3M3RbMtavBXTGey59
++31XL3Igz9315KWs8dSVyV1not679mPtuVmy8sQpg+XgplmbdSvdcebG1M6xe815
+IZ3p+dvckVdauu+8kuHtO2qqyHjd7UjcsfwN70ZA6Kp76ljzfP0eW9OY8WrW2WOd
+sW0Xmn6acE/nhy/FfpfUvTaUEpPKpvifF2+tDeV+9qWrdMB7/MnVChMVkx3wUWZD
+lun+W7b4u9bGR0t1U42jZQt3F8L2pRdcX4I9jZxn9oquwD7cWv7FqnT53SDvicHS
+Tx6sHOzjm83vV5f1HIgYtIGxsQfd+TIVmTDau7HlVpBi3b9cXdtQMgdzTm33J7yc
+70OYqv7ki38ChLq4QA==
+=C741
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/kimjoar
+
+==================================================================
+
