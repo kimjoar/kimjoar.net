@@ -1,0 +1,9 @@
+{
+  "eslint.trace.server": null,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  "[javascript]": {
+    "editor.formatOnSave": true
+  }
+}
