@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css?family=Fredericka+the+Great|Open+Sans|Over+the+Rainbow");
+
+.root {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.title {
+  font-family: "Fredericka the Great";
+  font-weight: normal;
+  font-size: 4rem;
+}
+
+.description {
+  font-family: "Over the Rainbow", cursive;
+  font-weight: normal;
+  font-size: 2rem;
+}

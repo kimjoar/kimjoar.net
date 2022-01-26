@@ -1,0 +1,30 @@
+body,
+html {
+  padding: 0;
+  margin: 0;
+  background-color: #fefefe;
+  color: #222;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: #297fa8;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+[class^="icon-"] {
+  height: 55px;
+  position: relative;
+  top: 13px;
+  margin-left: 10px;
+}
+.icon-bekk {
+  top: 5px;
+  height: 40px;
+}
