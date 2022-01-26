@@ -1,16 +1,30 @@
-html,
-body {
+body,
+html {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
+  background-color: #fefefe;
+  color: #222;
 }
 
 * {
   box-sizing: border-box;
+}
+
+a {
+  color: #297fa8;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+[class^="icon-"] {
+  height: 55px;
+  position: relative;
+  top: 13px;
+  margin-left: 10px;
+}
+.icon-bekk {
+  top: 5px;
+  height: 40px;
 }
