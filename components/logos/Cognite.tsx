@@ -5,31 +5,27 @@ import { randomBetween, randomIn } from "../../lib/random";
 const logoPath =
   "M703.58 328.24v-33.61a29.28 29.28 90 0 0-58.56 0v42.67c-16.88 3.88-36.38 7.76-55.9 11.65V197.57a29.1 29.1 90 0 0-29.73-28.46h-.15a28.78 28.78 90 0 0-28.6 28.45v165.65a10 10 90 0 0-5.21 1.29c-18.18 3.89-35.08 7.77-52 11.65V248.06a28.62 28.62 90 0 0-57.22 0V389c-20.8 3.9-39 7.78-57.19 10.36v-66a28.62 28.62 90 1 0-57.23 0v73.73c-65 7.76-102.68 5.18-106.61-6.51C186 381.21 245.84 354 262.74 345v-1.28h-1.3c-16.9 6.45-89.71 36.2-80.6 62.08 9.09 28.47 120.9 36.23 353.64-20.69 195-47.88 284.75-56.93 293.86-38.81 6.51 15.5-41.62 45.28-88.41 66a4.74 4.74 90 0 0-1.3 3.86c1.3 1.3 2.58 2.59 3.91 1.3 16.88-6.5 105.31-44 101.38-75-3.87-20.69-50.69-27.17-140.4-14.23M302.09 464.41v21.69a28.31 28.31 90 0 0 56.61 0V458a514.94 514.94 90 0 1-56.61 6.4m114.29-16v78.87a28.31 28.31 90 1 0 56.62 1.12v-91.62a485.24 485.24 90 0 1-56.61 11.64m118.18-24.24h-3.9v55.43a29.39 29.39 90 0 0 58.73 0v-68.32c-17 3.88-35.23 7.73-54.83 12.91M645 398.43v33.44a29.08 29.08 90 0 0 29.86 28.28h.14a28.75 28.75 90 0 0 28.67-28.27v-45q-25.44 5.76-58.75 11.56";
 
-class CogniteLogo extends React.Component {
-  render() {
-    return (
-      <Logo
-        className="icon-js"
-        viewBox="180 150 820 500"
-        onMount={this.onMount}
-      />
-    );
-  }
-
-  onMount(svg: SVGSVGElement, rc: any) {
-    svg.appendChild(
-      rc.path(logoPath, {
-        stroke: "none",
-        fill: "#000",
-        fillWeight: 1.5,
-        hachureGap: 20,
-        fillStyle: "zigzag",
-        hachureAngle: 20,
-        roughness: 5,
-        bowing: 5,
-      })
-    );
-  }
+function CogniteLogo() {
+  return (
+    <Logo
+      className="icon-js"
+      viewBox="180 150 820 500"
+      onMount={(svg, rc) => {
+        svg.appendChild(
+          rc.path(logoPath, {
+            stroke: "none",
+            fill: "#000",
+            fillWeight: 1.5,
+            hachureGap: 20,
+            fillStyle: "zigzag",
+            hachureAngle: 20,
+            roughness: 5,
+            bowing: 5,
+          })
+        );
+      }}
+    />
+  );
 }
 
 export default CogniteLogo;

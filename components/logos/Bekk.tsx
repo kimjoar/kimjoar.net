@@ -29,34 +29,30 @@ const paths = [
   },
 ];
 
-class ElasticLogo extends React.Component {
-  render() {
-    return (
-      <Logo
-        className="icon-bekk"
-        viewBox="0 0 438 133"
-        onMount={this.onMount}
-      />
-    );
-  }
+function BekkLogo() {
+  return (
+    <Logo
+      className="icon-bekk"
+      viewBox="0 0 438 133"
+      onMount={(svg, rc) => {
+        const angle = randomBetween(0, 60);
+        const gap = randomIn([3, 4, 5, 6]);
 
-  onMount(svg: SVGSVGElement, rc: any) {
-    const angle = randomBetween(0, 60);
-    const gap = randomIn([3, 4, 5, 6]);
-
-    paths.forEach((path) => {
-      svg.appendChild(
-        rc.path(path.d, {
-          strokeWidth: 0,
-          hachureAngle: randomBetween(angle - 10, angle + 10),
-          hachureGap: gap,
-          fillWeight: 0.8,
-          roughness: randomIn([2, 3]),
-          fill: "#1A1A1A",
-        })
-      );
-    });
-  }
+        paths.forEach((path) => {
+          svg.appendChild(
+            rc.path(path.d, {
+              strokeWidth: 0,
+              hachureAngle: randomBetween(angle - 10, angle + 10),
+              hachureGap: gap,
+              fillWeight: 0.8,
+              roughness: randomIn([2, 3]),
+              fill: "#1A1A1A",
+            })
+          );
+        });
+      }}
+    />
+  );
 }
 
-export default ElasticLogo;
+export default BekkLogo;

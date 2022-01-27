@@ -33,33 +33,29 @@ const paths = [
   },
 ];
 
-class ElasticLogo extends React.Component {
-  render() {
-    return (
-      <Logo
-        className="icon-elastic"
-        viewBox="0 0 240 240"
-        onMount={this.onMount}
-      />
-    );
-  }
+function ElasticLogo() {
+  return (
+    <Logo
+      className="icon-elastic"
+      viewBox="0 0 240 240"
+      onMount={(svg, rc) => {
+        paths.forEach((path) => {
+          const { d, fill } = path;
 
-  onMount(svg: SVGSVGElement, rc: any) {
-    paths.forEach((path) => {
-      const { d, fill } = path;
-
-      svg.appendChild(
-        rc.path(d, {
-          strokeWidth: 0,
-          hachureAngle: randomBetween(0, 180),
-          hachureGap: randomIn([3, 4, 5]),
-          fillWeight: 1,
-          roughness: randomIn([1, 2, 3, 4, 5]),
-          fill,
-        })
-      );
-    });
-  }
+          svg.appendChild(
+            rc.path(d, {
+              strokeWidth: 0,
+              hachureAngle: randomBetween(0, 180),
+              hachureGap: randomIn([3, 4, 5]),
+              fillWeight: 1,
+              roughness: randomIn([1, 2, 3, 4, 5]),
+              fill,
+            })
+          );
+        });
+      }}
+    />
+  );
 }
 
 export default ElasticLogo;
