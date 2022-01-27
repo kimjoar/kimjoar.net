@@ -1,39 +1,40 @@
-import React from "react";
+import React, { useLayoutEffect, useRef } from "react";
 import cx from "classnames";
 import rough from "roughjs/bundled/rough.cjs.js";
+import { RoughSVG } from "roughjs/bin/svg";
 
-interface Props {
+type Props = {
   className?: string;
   viewBox: string;
-  onMount: (svg: SVGSVGElement, rc: any) => void;
-}
+  onMount: (svg: SVGSVGElement, roughSvg: RoughSVG) => void;
+};
 
-class Logo extends React.Component<Props> {
-  svgRef: React.RefObject<SVGSVGElement> = React.createRef();
+function Logo({ className, viewBox, onMount }: Props) {
+  const svgRef = useRef<SVGSVGElement>();
 
-  componentDidMount() {
-    const svg = this.svgRef.current;
+  useLayoutEffect(() => {
+    const svg = svgRef.current;
 
     if (svg == null) {
       return;
     }
-    const rc = rough.svg(svg);
+    const roughSvg = rough.svg(svg);
 
-    this.props.onMount(svg, rc);
-  }
+    onMount(svg, roughSvg);
+  }, [onMount]);
 
-  render() {
-    const { className, viewBox } = this.props;
-
-    return (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        className={cx(className)}
-        viewBox={viewBox}
-        ref={this.svgRef}
-      />
-    );
-  }
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      className={cx(className)}
+      viewBox={viewBox}
+      ref={(ref) => {
+        if (ref != null) {
+          svgRef.current = ref;
+        }
+      }}
+    />
+  );
 }
 
 export default Logo;
