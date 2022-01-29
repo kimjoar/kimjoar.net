@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import cx from "classnames";
 import rough from "roughjs/bundled/rough.cjs.js";
 import { RoughSVG } from "roughjs/bin/svg";
@@ -12,7 +12,7 @@ type Props = {
 function Logo({ className, viewBox, onMount }: Props) {
   const svgRef = useRef<SVGSVGElement>();
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     const svg = svgRef.current;
 
     if (svg == null) {
