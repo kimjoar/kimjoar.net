@@ -13,7 +13,7 @@ const Home: NextPage = () => {
   return (
     <div className={styles.root}>
       <Head>
-        <title>Create Next App</title>
+        <title>Kim Joar Bekkelund</title>
         <meta name="description" content="The website of Kim Joar Bekkelund" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
