@@ -10,7 +10,7 @@ type Props = {
 };
 
 function Logo({ className, viewBox, onMount }: Props) {
-  const svgRef = useRef<SVGSVGElement>();
+  const svgRef = useRef<SVGSVGElement>(null);
 
   useEffect(() => {
     const svg = svgRef.current;
@@ -28,11 +28,7 @@ function Logo({ className, viewBox, onMount }: Props) {
       xmlns="http://www.w3.org/2000/svg"
       className={cx(className)}
       viewBox={viewBox}
-      ref={(ref) => {
-        if (ref != null) {
-          svgRef.current = ref;
-        }
-      }}
+      ref={svgRef}
     />
   );
 }
