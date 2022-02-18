@@ -10,6 +10,24 @@ html {
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "Over the Rainbow";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+    url("../asset/over-the-rainbow-v14-latin-regular.woff2") format("woff2"),
+    url("../asset/over-the-rainbow-v14-latin-regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Fredericka the Great";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+    url("../asset/fredericka-the-great-v13-latin-regular.woff2") format("woff2"),
+    url("../asset/fredericka-the-great-v13-latin-regular.woff") format("woff");
+}
+
 a {
   color: #297fa8;
   text-decoration: none;
