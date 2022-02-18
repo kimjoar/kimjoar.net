@@ -8,6 +8,7 @@ import JavaScriptLogo from "../components/logos/JavaScript";
 import GithubLogo from "../components/logos/Github";
 import CogniteLogo from "../components/logos/Cognite";
 import styles from "../styles/Home.module.css";
+import LinkedInLogo from "../components/logos/LinkedIn";
 
 const Home: NextPage = () => {
   return (
@@ -38,10 +39,13 @@ const Home: NextPage = () => {
         <p className={styles.description}>
           Years ago I co-created{" "}
           <a href="http://superherojs.com">Superhero.js</a> to help people get
-          started with JavaScript. <JavaScriptLogo />
+          started with JavaScript
+          <JavaScriptLogo />
         </p>
         <p className={styles.description}>
-          You can get in touch at hei@kimjoar.net
+          You can get in touch at hei@kimjoar.net or on{" "}
+          <a href="https://www.linkedin.com/in/kimjoar/">LinkedIn</a>
+          <LinkedInLogo />
         </p>
       </main>
     </div>
