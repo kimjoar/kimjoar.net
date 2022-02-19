@@ -43,7 +43,8 @@ const Home: NextPage = () => {
           <JavaScriptLogo />
         </p>
         <p className={styles.description}>
-          You can get in touch at hei@kimjoar.net or on{" "}
+          You can get in touch at{" "}
+          <a href="mailto:hei@kimjoar.net">hei@kimjoar.net</a> or on{" "}
           <a href="https://www.linkedin.com/in/kimjoar/">LinkedIn</a>
           <LinkedInLogo />
         </p>
