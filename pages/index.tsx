@@ -9,6 +9,7 @@ import GithubLogo from "../components/logos/Github";
 import CogniteLogo from "../components/logos/Cognite";
 import styles from "../styles/Home.module.css";
 import LinkedInLogo from "../components/logos/LinkedIn";
+import TanaLogo from "../components/logos/Tana";
 
 const Home: NextPage = () => {
   return (
@@ -22,11 +23,15 @@ const Home: NextPage = () => {
       <main className={styles.main}>
         <h1 className={styles.title}>Kim Joar Bekkelund</h1>
         <p className={styles.description}>
-          Engineering Director at{" "}
+          Software Engineer at <a href="https://www.tana.inc">Tana</a>
+          <TanaLogo />
+          <br />
+          Previously Engineering Director at{" "}
           <a href="https://www.cognite.com/company/careers/">Cognite</a>
           <CogniteLogo />
           <br />
-          Previously at <a href="https://facebook.com/Engineering/">Facebook</a>
+          and Software Engineer at{" "}
+          <a href="https://facebook.com/Engineering/">Facebook</a>
           <FacebookLogo />, <a href="https://elastic.co">Elastic</a>
           <ElasticLogo /> and <a href="https://bekk.no">Bekk Consulting</a>
           <BekkLogo />
