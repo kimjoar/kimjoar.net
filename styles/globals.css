@@ -4,6 +4,15 @@ html {
   margin: 0;
   background-color: #fbf8f2;
   color: #1f1c18;
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  body,
+  html {
+    background-color: #191713;
+    color: #ece5d8;
+  }
 }
 
 * {

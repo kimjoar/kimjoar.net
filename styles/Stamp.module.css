@@ -24,3 +24,10 @@
   font-variation-settings: "opsz" 72, "SOFT" 0, "WONK" 0;
   transform: translateY(0.04em);
 }
+
+@media (prefers-color-scheme: dark) {
+  .stamp {
+    --red: #e2775a;
+    --paper: #191713;
+  }
+}

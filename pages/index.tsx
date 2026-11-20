@@ -30,7 +30,16 @@ export default function Home() {
       <Head>
         <title>Kim Joar Bekkelund</title>
         <meta name="description" content={description} />
-        <meta name="theme-color" content="#fbf8f2" />
+        <meta
+          name="theme-color"
+          content="#fbf8f2"
+          media="(prefers-color-scheme: light)"
+        />
+        <meta
+          name="theme-color"
+          content="#191713"
+          media="(prefers-color-scheme: dark)"
+        />
         <link rel="icon" href="/favicon.ico" sizes="48x48" />
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />

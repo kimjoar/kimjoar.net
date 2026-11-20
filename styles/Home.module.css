@@ -10,6 +10,7 @@
   --muted: #776e62;
   --hair: rgba(31, 28, 24, 0.14);
   --red: #a8361f;
+  --lede: #403a33;
   --label: 7rem;
   --measure: 34rem;
   --notes: 16rem;
@@ -36,6 +37,18 @@
 .page a:hover {
   color: var(--red);
   text-decoration-color: currentColor;
+}
+
+/* Dark: warm near-black paper, cream ink, a lighter vermilion */
+@media (prefers-color-scheme: dark) {
+  .page {
+    --paper: #191713;
+    --ink: #ece5d8;
+    --muted: #9d9387;
+    --hair: rgba(236, 229, 216, 0.14);
+    --red: #e2775a;
+    --lede: #c9c0b2;
+  }
 }
 
 /* Top bar */
@@ -113,7 +126,7 @@
   font-weight: 350;
   font-size: clamp(1.3rem, 2.2vw, 1.6rem);
   line-height: 1.4;
-  color: #403a33;
+  color: var(--lede);
 }
 
 /* Sections */
