@@ -31,11 +31,13 @@ export default function Home() {
         <title>Kim Joar Bekkelund</title>
         <meta name="description" content={description} />
         <meta
+          key="theme-color-light"
           name="theme-color"
           content="#fbf8f2"
           media="(prefers-color-scheme: light)"
         />
         <meta
+          key="theme-color-dark"
           name="theme-color"
           content="#191713"
           media="(prefers-color-scheme: dark)"
