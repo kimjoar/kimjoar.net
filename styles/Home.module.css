@@ -1,16 +1,301 @@
-.root {
-  width: 80%;
+/*
+ * Home: an essay with notes in the margin.
+ * One soft serif for the essay, a quiet mono for notes in the margin.
+ * Desktop: label column · prose column · notes column.
+ */
+
+.page {
+  --paper: #fbf8f2;
+  --ink: #1f1c18;
+  --muted: #776e62;
+  --hair: rgba(31, 28, 24, 0.14);
+  --red: #a8361f;
+  --label: 7rem;
+  --measure: 34rem;
+  --notes: 16rem;
+  --gap: 3rem;
+
+  min-height: 100vh;
+  padding: 0 2rem 8rem;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-fraunces), Georgia, serif;
+  font-optical-sizing: auto;
+  font-variation-settings: "SOFT" 50, "WONK" 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, var(--red) 45%, transparent);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+}
+
+.page a:hover {
+  color: var(--red);
+  text-decoration-color: currentColor;
+}
+
+/* Top bar */
+
+.top,
+.main,
+.colophon {
+  max-width: calc(var(--label) + var(--measure) + var(--notes) + var(--gap) * 2);
   margin: 0 auto;
 }
 
-.title {
-  font-family: "Fredericka the Great";
-  font-weight: normal;
-  font-size: 4rem;
+.top {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 1.75rem 0;
+  border-bottom: 1px solid var(--hair);
 }
 
-.description {
-  font-family: "Over the Rainbow", cursive;
-  font-weight: normal;
-  font-size: 2rem;
+.top .meta:first-of-type {
+  margin-left: auto;
+}
+
+.page a.home {
+  text-decoration: none;
+}
+
+.meta {
+  font-family: var(--font-plex-mono), ui-monospace, monospace;
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.page a.meta {
+  text-decoration: none;
+}
+
+/* Hero */
+
+.hero {
+  position: relative;
+  padding: clamp(4rem, 10vw, 8rem) 0 clamp(3rem, 7vw, 5.5rem);
+  padding-left: calc(var(--label) + var(--gap));
+}
+
+.name {
+  margin: 0;
+  font-weight: 300;
+  font-size: clamp(3.4rem, 11.5vw, 9.5rem);
+  line-height: 0.9;
+  letter-spacing: -0.04em;
+  font-variation-settings: "opsz" 144, "SOFT" 100, "WONK" 0;
+  margin-left: -0.06em;
+}
+
+.pronounce {
+  position: absolute;
+  left: 0;
+  top: calc(clamp(4rem, 10vw, 8rem) + 0.6rem);
+  width: var(--label);
+  margin: 0;
+  font-family: var(--font-plex-mono), ui-monospace, monospace;
+  font-style: italic;
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--red);
+}
+
+.lede {
+  max-width: 30rem;
+  margin: 2.25rem 0 0;
+  font-style: italic;
+  font-weight: 350;
+  font-size: clamp(1.3rem, 2.2vw, 1.6rem);
+  line-height: 1.4;
+  color: #403a33;
+}
+
+/* Sections */
+
+.section {
+  display: grid;
+  grid-template-columns: var(--label) minmax(0, var(--measure)) var(--notes);
+  column-gap: var(--gap);
+  padding: 2.5rem 0 1rem;
+  border-top: 1px solid var(--hair);
+}
+
+.label {
+  margin: 0.45rem 0 0;
+  font-family: var(--font-plex-mono), ui-monospace, monospace;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.label span {
+  color: var(--red);
+  margin-right: 0.4em;
+}
+
+.prose p {
+  margin: 0 0 1.4rem;
+  font-size: 1.3rem;
+  line-height: 1.6;
+  font-weight: 380;
+  hanging-punctuation: first;
+}
+
+.runin {
+  font-size: 0.74em;
+  font-weight: 560;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+/* Notes */
+
+.ref {
+  font-family: var(--font-plex-mono), ui-monospace, monospace;
+  font-size: 0.55em;
+  font-weight: 500;
+  color: var(--red);
+  margin-left: 0.08em;
+  vertical-align: 0.65em;
+  line-height: 0;
+}
+
+.toggle {
+  display: none;
+}
+
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.note {
+  float: right;
+  clear: right;
+  width: var(--notes);
+  margin-right: calc(-1 * (var(--notes) + var(--gap)));
+  margin-top: 0.35rem;
+  margin-bottom: 1rem;
+  font-family: var(--font-plex-mono), ui-monospace, monospace;
+  font-size: 12.5px;
+  line-height: 1.6;
+  color: var(--muted);
+}
+
+.note strong {
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.noteNum {
+  color: var(--red);
+  font-weight: 500;
+  margin-right: 0.6em;
+}
+
+/* Closing */
+
+.closing {
+  padding: 4rem 0 0 calc(var(--label) + var(--gap));
+  border-top: 1px solid var(--hair);
+}
+
+.closing p {
+  max-width: 38rem;
+  margin: 0;
+  font-style: italic;
+  font-weight: 330;
+  font-size: clamp(1.7rem, 3.6vw, 2.6rem);
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  font-variation-settings: "opsz" 96, "SOFT" 100, "WONK" 1;
+}
+
+.colophon {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-top: 7rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--hair);
+}
+
+/* Narrower: notes fold into the text as indented asides */
+
+@media (max-width: 1100px) {
+  .page {
+    padding: 0 1.25rem 7rem;
+  }
+
+  .hero,
+  .closing {
+    padding-left: 0;
+  }
+
+  .pronounce {
+    position: static;
+    width: auto;
+    margin-top: 1rem;
+  }
+
+  .section {
+    grid-template-columns: minmax(0, var(--measure));
+    justify-content: start;
+  }
+
+  .label {
+    margin: 0 0 1rem;
+  }
+
+  /* Tap the number to open its note */
+  .ref {
+    cursor: pointer;
+    padding: 0 0.25em;
+    margin: 0 -0.1em;
+    font-size: 0.6em;
+  }
+
+  .note {
+    display: none;
+  }
+
+  .toggle:checked + .note {
+    float: none;
+    display: block;
+    width: auto;
+    margin: 0.75rem 0 0.9rem;
+    padding-left: 1rem;
+    border-left: 1px solid var(--red);
+  }
+
+  .top {
+    gap: 1rem;
+  }
+
+  .top .meta:first-of-type {
+    display: none;
+  }
+
+  .top a.meta {
+    margin-left: auto;
+  }
+
+}
+
+@media (max-width: 520px) {
+  .prose p {
+    font-size: 1.15rem;
+  }
 }

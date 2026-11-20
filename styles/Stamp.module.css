@@ -1,0 +1,26 @@
+.stamp {
+  --red: #a8361f;
+  --paper: #fbf8f2;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  width: 1.9em;
+  height: 1.9em;
+  border-radius: 50%;
+  border: max(1.5px, 0.05em) solid var(--red);
+  box-shadow:
+    inset 0 0 0 0.09em var(--paper),
+    inset 0 0 0 calc(0.09em + max(1px, 0.03em)) var(--red);
+  color: var(--red);
+  line-height: 1;
+  transform: rotate(-8deg);
+}
+
+.letters {
+  font-family: var(--font-fraunces), Georgia, serif;
+  font-weight: 600;
+  font-size: 0.66em;
+  font-variation-settings: "opsz" 72, "SOFT" 0, "WONK" 0;
+  transform: translateY(0.04em);
+}
